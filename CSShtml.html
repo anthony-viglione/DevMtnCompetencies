@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Competencies</title>
+    <link rel="stylesheet" type="css" href="index.css">
+    <style>
+    /* 22C-2 24C 24D 24E */
+    .listContainer{
+        margin: 100px; 
+        border: 5px green solid; 
+        padding: 50px; 
+        width: 500px; 
+    }
+    /* 22C-1 23E */
+    #invisImg{
+        color:lightskyblue
+    }
+    /* 22C-3 */
+    body ol{
+        background-color: black;
+        opacity: .8;
+    }
+    /* 22C-4 */
+    ul > li{
+        color:rgb(204, 94, 94);
+    }
+    /* 22C-5 */
+    div + p{
+        font-size: 1.5em;
+        font-weight: 500;
+        color:chartreuse;
+    }
+    </style>
+</head>
+<!--23F 23E-->
+<body style = "background-image: url('https://d13ezvd6yrslxm.cloudfront.net/wp/wp-content/images/ZZ35747F30-700x350.jpg'); color:lightgrey" >
+    <!--23E-->
+    <header style="background-color: black; opacity:0.75">
+        <h1>This would usually be the title</h1>
+        <h2>Written in the header(by wrapping in header-tags) and using h-tags(headings) for default font sizing and weight(boldness).</h2>
+        <h3>Ranging from 1 to 6 with one being the largest.</h3>
+        <h4>We are now on to an h4 tag.</h4>
+        <!--25D-->
+        <h5 style="float:right">h5 with a float right</h5>
+        <h6>h6</h6>
+    </header>
+    <div>Hello World! This is a div.</div>
+    <div>This is also a div.</div>
+    <div>Notice how the lines don't have significant spacing between them.</div>
+    <p>This project is for passing off competencies. Without styling, divs and p-tags will render vertically in a row.</p>
+    <p>You can see that p-tags come preset to start new paragraphs</p>
+    <span>This is a span</span>
+    <!--23D-3-->
+    <span style = "font-size: 1.25em">This too. </span>
+    <span>Spans are cool because they render in a row.</span>
+    <!--23D-1 23D-2 23D-3-->
+    <span style = "color:blue; font-weight: bolder; font-size: 2em">You can use them to color the text with styling</span>
+    <ul class="listContainer">
+        <li>This is an UN-ordered list composed of li-tags</li>
+        <li>This list is made by wrapping the list items in ul-tags</li>
+        <li>As you can see, it defaults to bullets.</li>
+        <li>No border-box</li>
+    </ul>
+    <!--24F 25C-1-->
+    <ol class="listContainer" style = "box-sizing: border-box; position: relative; left: 750px">
+        <!--25C-2-->
+        <li style="position: absolute; right:0; bottom:0">This is an ORDERED list composed of li-tags</li>
+        <!--25C-2-->
+        <li style="position: absolute; right:0; bottom:1em">This list is made by wrapping the list items in ul-tags</li>
+        <!--25C-2-->
+        <li style="position: absolute; right:0; bottom:2em">As you can see, it defaults to numbering each list item.</li>
+        <!--25C-2-->
+        <li style="position: absolute; right:0; bottom:3em">Border-box. Same styling otherwise.</li>
+    </ol>
+    <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQCotGI8ogXKhFcpkhYESzBSFslXH0LldZ5_vgYl0iLBFyOiIN3crmkhIVinzPNBsP4w3NyrNtn5D_2w5yg8aQjDjJNiAYE-UbmQwh7Ezemf_mxyuIKCSrp&usqp=CAc" style="position: relative; left: 25px;"/>
+    <!--23E-->
+    <a href="https://www.youtube.com/watch?v=hA6hldpSTF8" style="color:lightskyblue">Can't wait for Endgame! Check out this trailer I linked with an a-tag.. (Also this isn't an ad; I'm just excited)</a>
+    <!--25F-->
+    <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQCotGI8ogXKhFcpkhYESzBSFslXH0LldZ5_vgYl0iLBFyOiIN3crmkhIVinzPNBsP4w3NyrNtn5D_2w5yg8aQjDjJNiAYE-UbmQwh7Ezemf_mxyuIKCSrp&usqp=CAc" style="display: none"/>
+    <article>
+        This text is displayed in an article-tag. You could put divs and spans and p-tags in it.
+    </article>
+    <section style="height: 250px">
+        This is a section tag. Mostly used for splitting up the sections of the site.
+    </section>
+    <!--25C-1-->
+    <footer style="position: fixed; bottom: 0px; left: 0px;">
+        This is the footer. Everything from the title down to and including here is technically in the body. Usually you'd use this for attributions and maybe links.
+        <p>-Anthony Viglione</p>
+        <p>
+            <a id="invisImg" href="https://github.com/anthony-viglione/DevMtnCompetencies" >
+                check out my github for this project
+            </a>
+        </p>
+    </footer>
+
+</body>
+</html>
+<script>
+    for(i=0;i<=1000000;i++){
+        if (i % 100 === 0){
+        console.log(`The secret JavaScript counter! ${i}`)
+        }
+    }
+</script>
