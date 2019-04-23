@@ -1,0 +1,2 @@
+ALTER TABLE hero
+DROP COLUMN origin;
