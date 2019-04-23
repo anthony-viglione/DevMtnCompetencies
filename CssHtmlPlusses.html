@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="title" content="CSS HTML Plus">
+    <meta name="description" content="Example Site Skill Demonstration">
+    <meta name="keywords" content="HTML, CSS, JSX, JavaScript, DevMountain, Web Developer, Avengers, Endgame, Avengers: Endgame, Thor, Captain America, Captain Marvel, Spider-Man, Iron Man">
+
+    <title>CSS HTML Plus</title>
+    <style>
+        @media screen and (max-width: 360px){
+            .subDiv{
+                width:300px;
+                height:300px;
+                border: 5px grey solid;
+                display: flex;
+                flex-flow: wrap;
+                box-shadow: 1px 1px 5px 5px black;
+                margin: 10px auto;
+            }
+            .mainDiv{
+                border: 5px crimson solid;
+                display: flex;
+                flex-flow: wrap;
+                justify-content: space-around;
+                
+            }
+            .mainP{
+                background-color: #ED1D24;
+                color: whitesmoke;
+                font-weight: bolder;
+                box-shadow: 5px 5px 5px black;
+                
+            }
+            .menu1{
+                display:none;
+            }
+            .menu2{
+                display:flex; 
+                flex-direction: column;
+                align-items: center;
+                position: fixed; 
+                top: 10px; 
+                right:10px; 
+                width: 50px; 
+                justify-content: space-between; 
+                background-image: radial-gradient(#4458CE, #C34C74,#000000);
+                opacity: .75;
+            }
+            /* .menu3{
+                position: fixed; 
+                top: 10px; 
+                right:10px; 
+                width: 50px; 
+            } */
+            .header2{
+                background-image: url('http://hd.wallpaperswide.com/thumbs/the_avengers-t1.jpg'); 
+                height: 212px;
+                margin-left:22px;
+                margin-right:22px;
+            }
+            .subDiv:hover{
+                box-shadow: 1px 1px 5px 5px rgb(76, 250, 105);
+            }
+            .subDiv:active{
+                box-shadow: 1px 1px 5px 5px rgb(250, 76, 227);
+            }
+            input{
+                margin:10px auto;
+                background-image: linear-gradient(180deg, red, blue)
+            }
+            input:hover{
+                box-shadow: 1px 1px 5px 5px rgb(76, 250, 105);
+                background-image: radial-gradient( rgb(253, 95, 253),rgb(104, 248, 104))
+            }
+            input:active{
+                box-shadow: 1px 1px 5px 5px rgb(250, 76, 227);
+            }
+            input:focus{
+                box-shadow: 1px 1px 5px 5px rgb(250, 76, 76);
+                background-image: radial-gradient( rgb(253, 95, 253),rgb(104, 248, 104), rgb(255, 107, 107))
+            }
+            p:nth-child(7){
+                background-color: aqua;
+                color: #C34C74;
+            }
+            div:nth-child(9){
+                box-shadow: 0px 0px 10px 10px rgb(107, 207, 247)
+            }
+            div:nth-child(7){
+                box-shadow: 0px 0px 10px 10px rgb(107, 207, 247)
+            }
+            input[type=text]:disabled {
+                background: #3c395e;
+                color:rgb(250, 104, 153);
+            }
+        }
+        @media screen and (min-width: 361px){
+            .subDiv{
+                width:400px;
+                height:400px;
+                border: 5px grey solid;
+                display: flex;
+                flex-flow: wrap;
+                box-shadow: 1px 1px 5px 5px black;
+                margin: 10px auto;
+            }
+            .mainDiv{
+                border: 5px crimson solid;
+                display: flex;
+                flex-flow: wrap;
+                justify-content: space-around;
+            }
+            .mainP{
+                background-color: #ED1D24;
+                color: whitesmoke;
+                font-weight: bolder;
+                box-shadow: 5px 5px 5px black;
+            }
+            .header1{
+                background-image: url('http://2.bp.blogspot.com/-0_ayTZ7ND6M/VIr_Y3TnqoI/AAAAAAAAHyU/F2xRTCvDsbc/s1600/avengers1.PNG'); 
+                height: 600px;
+            }
+            .menu1{
+                display:flex; 
+                position: fixed; 
+                top: 20px; 
+                right:20px; 
+                width: 400px; 
+                justify-content: space-between; 
+                background-image: radial-gradient(#4458CE, #C34C74,#000000)
+            }
+            .menu2{
+                display: none;
+            }
+            .subDiv:hover{
+                box-shadow: 1px 1px 5px 5px rgb(76, 250, 105);
+            }
+            .subDiv:active{
+                box-shadow: 1px 1px 5px 5px rgb(250, 76, 227);
+            }
+            input{
+                margin:10px auto;
+                background-image: linear-gradient(180deg, red, blue)
+            }
+            input:hover{
+                box-shadow: 1px 1px 5px 5px rgb(76, 250, 105);
+                background-image: radial-gradient( rgb(253, 95, 253),rgb(104, 248, 104))
+            }
+            input:active{
+                box-shadow: 1px 1px 5px 5px rgb(250, 76, 227);
+            }
+            input:focus{
+                box-shadow: 1px 1px 5px 5px rgb(250, 76, 76);
+                background-image: radial-gradient( rgb(253, 95, 253),rgb(104, 248, 104), rgb(255, 107, 107))
+            }
+            p:nth-child(7){
+                background-color: aqua;
+                color: #C34C74;
+            }
+            div:nth-child(9){
+                box-shadow: 0px 0px 10px 10px rgb(107, 207, 247)
+            }
+            div:nth-child(7){
+                box-shadow: 0px 0px 10px 10px rgb(107, 207, 247)
+            }
+            input[type=text]:disabled {
+                background: #3c395e;
+                color:rgb(250, 104, 153);
+            }
+        }
+            </style>
+            </head>
+            <body>
+                <header class="header1">
+                    <div class="menu1">
+                        <p>Home</p>
+                        <p>Buy Tickets</p>
+                        <p>Lore</p>
+                        <p>Game</p>
+                        <p>Donate</p>
+                    </div>
+                </header>
+                <header class="header2">
+                    <div class="menu2">
+                        <p>Home</p>
+                        <p>Tickets</p>
+                        <p>Lore</p>
+                        <p>Game</p>
+                        <p>Donate</p>
+                    </div>
+                    <!-- <div class="menu3">
+                        #
+                    </div> -->
+                </header>
+    <div class="mainDiv">
+        <div class="subDiv" style="flex-direction: column; align-items: center; background-image: radial-gradient(green,yellow, blue)">
+            <p class="mainP" >Iron Man</p>
+            <p class="mainP" >Hulk</p>
+            <p class="mainP" >Thor</p>
+            <p class="mainP" >Black Widow</p>
+            <p class="mainP" >Black Panther</p>
+            <p class="mainP" >Ant Man</p>
+            <p class="mainP" >Captain Marvel</p>
+            <p class="mainP" >Starlord</p>
+            <p class="mainP" >Captain America</p>
+            <p class="mainP" >Groot</p>
+            <p class="mainP" >Gamora</p>
+            <p class="mainP" >Drax</p>
+            <p class="mainP" >Rocket</p>
+            <p class="mainP" >Hawkeye</p>
+        </div>
+
+        <div class="subDiv" style="flex-direction: column; align-items: center; background-image: linear-gradient(to right, white, black)">
+            <p class="mainP" >Black Panther</p>
+            <p class="mainP" >Starlord</p>
+            <p class="mainP" >Drax</p>
+            <p class="mainP" >Black Widow</p>
+            <p class="mainP" >Gamora</p>
+        </div>
+
+        <div class="subDiv" style="flex-direction: column; align-items: center; background-image: linear-gradient(to right, black, crimson)">
+            <p class="mainP" >Iron Man</p>
+            <p class="mainP" >Hulk</p>
+            <p class="mainP" >Thor</p>
+            <p class="mainP" >Black Widow</p>
+            <p class="mainP" >Ant Man</p>
+            <p class="mainP" >Captain Marvel</p>
+            <p class="mainP" >Groot</p>
+            <p class="mainP" >Rocket</p>
+            <p class="mainP" >Captain America</p>
+            <p class="mainP" >Hawkeye</p>
+        </div>
+
+        <div class="subDiv" style="flex-direction: column; align-items: center; background-image: linear-gradient(to left, rgb(74, 139, 96), black) ">
+            <p  class="mainP" style="writing-mode: vertical-rl; background-color: blue">Will they defeat Thanos?</p>
+            <p  class="mainP" style="writing-mode: vertical-rl; background-color: blue">A great question!</p>
+            <p  class="mainP" style="writing-mode: vertical-rl; background-color: blue">They have the help of a new hero</p>
+            <p  class="mainP" style="writing-mode: vertical-rl; background-color: blue">Captain Marvel joins the fight after a long abscence</p>
+            <p  class="mainP" style="writing-mode: vertical-rl; background-color: blue">Have her powers grown?</p>
+            <p  class="mainP" style="writing-mode: vertical-rl; background-color: blue">Will she and Thor get together?</p>
+        </div>
+
+        <div class="subDiv" style="flex-direction: column; align-items: center; background-image: linear-gradient(25deg, rgb(74, 139, 96), black) ">
+                <p class="mainP" style="background-color: rgb(104, 67, 104);">Will they defeat Thanos? Afterall, he has all the infinity stones and he also already defeated the heroes once. But really how does banner get hulk to cooperate?</p>
+
+            </div>
+
+        <div class="subDiv" style="justify-content: space-evenly; background-image: linear-gradient(180deg, green, purple)">
+            <input/>
+            <input/>
+            <input/>
+            <input/>
+            <input/>
+            <input/>
+        </div>
+
+        <div class="subDiv">
+            <form action="">
+                Avenger That was Dusted: <input type="text" value="Spider-Man"><br>
+                Avenger that Survived: <input type="text" value="Thor"><br>
+                Superpower that would be cool: <input type="text" disabled="disabled" value="Energy Absorption"><br>
+                Weapon that would be cool: <input type="text" value="Stormbreaker"><br>
+                Planet: <input type="text" disabled="disabled" value="Earth">
+            </form>
+        </div>
+        <div class="subDiv">
+            <a href="https://www.marvel.com/">
+                    Check out the dope Marvel site
+            </a>
+            <p>Since this link is to a legit site that has a positive reputation, it shouldn't hurt our PageRank</p>
+        </div>
+        <div class="subDiv">
+            <a rel="nofollow" href="https://www.amazon.com/Avengers-E3919AS00-Chameleon-Action-Figure/dp/B07D8F6CN5/ref=sr_1_3?crid=28N8D21FQDX7G&keywords=captain+america+action+figure&qid=1556035030&s=gateway&sprefix=Captain%2Caps%2C-1&sr=8-3" >
+                Buy a Captain America action figure! 
+            </a>
+            <p>Since this could be viewed as spammy by google's PageRank, we use the nofollow atribute so it doesn't detract from our link score</p>
+        </div>
+    </div>
+</body>
+</html>

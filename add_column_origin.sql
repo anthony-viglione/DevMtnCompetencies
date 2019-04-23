@@ -1,0 +1,2 @@
+ALTER TABLE hero
+ADD origin TEXT;
